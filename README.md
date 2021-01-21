@@ -1,6 +1,6 @@
 # dev_week
 
-IOSD dev week intro to app dev
+IOSD dev week intro to app development
 
 ## Getting Started
 
