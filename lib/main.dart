@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
     allPeople.add(Person("Shubh", "Alright, Alright, Alright!"));
 //    allPeople.add(Person("Shubh", "Why so serious?"));
     allPeople.add(Person("strx", "always this late"));
+    allPeople.add(Person("Shivansh ", "hey there i am using github?"));
 
     return MaterialApp(
       home: Scaffold(
