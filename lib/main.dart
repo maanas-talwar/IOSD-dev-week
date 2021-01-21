@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     allPeople = [Person("Maanas", "Why so serious?")];
     allPeople.add(Person("Shubh", "Alright, Alright, Alright!"));
 //    allPeople.add(Person("Shubh", "Why so serious?"));
-
+//    allPeople.add(Person("Atharav", "i don't know why"));
     return MaterialApp(
       home: Scaffold(
           appBar: AppBar(
