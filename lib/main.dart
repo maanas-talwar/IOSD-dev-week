@@ -14,12 +14,14 @@ class MyApp extends StatelessWidget {
     SystemChrome.setEnabledSystemUIOverlays([]);
     allPeople = [Person("Maanas", "Why so serious?")];
     allPeople.add(Person("Shubh", "Alright, Alright, Alright!"));
+    allPeople.add(Person("Archit", "Hello There"));
     allPeople.add(Person("vikas", "declar a variable not a war , excute a code not a human"));
 //    allPeople.add(Person("Shubh", "Why so serious?"));
     allPeople.add(Person("Ritik", "Hello World!"));
     allPeople.add(Person("Jai", "Yada yada yada?"));
     allPeople.add(Person("strx", "always this late"));
     allPeople.add(Person("Shivansh ", "hey there i am using github?"));
+
 
     return MaterialApp(
       home: Scaffold(
