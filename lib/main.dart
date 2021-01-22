@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
     SystemChrome.setEnabledSystemUIOverlays([]);
     allPeople = [Person("Maanas", "Why so serious?")];
     allPeople.add(Person("Shubh", "Alright, Alright, Alright!"));
+    allPeople.add(Person("Piyush", "IOSD session going on!"));
     allPeople.add(Person("Rinav", "Aise heee"));    
     allPeople.add(Person("Aviral", "Hello everyone! NSUT Rocks!!!"));
     allPeople.add(Person("Atharav", "i don't know why"));
