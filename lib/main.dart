@@ -15,7 +15,6 @@ class MyApp extends StatelessWidget {
     allPeople = [Person("Maanas", "Why so serious?")];
     allPeople.add(Person("Shubh", "Alright, Alright, Alright!"));
     allPeople.add(Person("Piyush", "IOSD session going on!"));
-    allPeople.add(Person("Rinav", "Aise heee"));    
     allPeople.add(Person("Aviral", "Hello everyone! NSUT Rocks!!!"));
     allPeople.add(Person("Atharav", "i don't know why"));
     allPeople.add(Person("Yash", "Hi"));
@@ -25,6 +24,7 @@ class MyApp extends StatelessWidget {
     allPeople.add(Person("vikas", "declar a variable not a war , excute a code not a human"));
     allPeople.add(Person("Harsh", "I wrote this comment in a cave with a pile of scraps."));
     allPeople.add(Person("Ritik", "Hello World!"));
+    allPeople.add(Person("Rinav", "Aise heee"));
     allPeople.add(Person("Jai", "Yada yada yada?"));
     allPeople.add(Person("strx", "always this late"));
     allPeople.add(Person("Shivansh ", "hey there i am using github?"));
@@ -64,32 +64,36 @@ class MyApp extends StatelessWidget {
                       ),
                     ],
                   ),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      AutoSizeText(
-                        allPeople[i].name,
-                        style: TextStyle(
-                          color: Colors.black87,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 21,
+                  child: Padding(
+                    padding: const EdgeInsets.all(10.0),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        AutoSizeText(
+                          allPeople[i].name,
+                          style: TextStyle(
+                            color: Colors.black87,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 21,
+                          ),
+                          minFontSize: 10,
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
                         ),
-                        minFontSize: 10,
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                      ),
-                      AutoSizeText(
-                        allPeople[i].quote,
-                        style: TextStyle(
-                          color: Colors.black54,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 15,
+                        AutoSizeText(
+                          allPeople[i].quote,
+                          style: TextStyle(
+                            color: Colors.black54,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 15,
+                          ),
+                          minFontSize: 10,
+                          maxLines: 3,
+                          overflow: TextOverflow.ellipsis,
+                          textAlign: TextAlign.center,
                         ),
-                        minFontSize: 10,
-                        maxLines: 3,
-                        overflow: TextOverflow.ellipsis,
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
               ),
